@@ -1,0 +1,290 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Agenda Deportiva</title>
+  <meta http-equiv="refresh" content="200"/>
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="expires" content="-1" />
+  <script type="text/javascript" src="https://pelotero.net/smallscripts.js"></script>
+  <link rel="stylesheet" href="https://pelotero.net/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">    
+  <style>
+  body {
+    margin: 0;
+     background: #ececec;
+    font-family: 'arial', sans serif;
+  }
+  .contenedor {
+    width: 65%;
+    height: 95%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    text-align: auto;
+  }
+  
+  .contenedor img {
+    width: 100%;
+  }
+  
+  @media (max-width:600px)  { 
+    .contenedor {
+      width: 90%;
+    }
+  }
+  
+  .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 15px;
+      height: 0;
+       overflow: hidden;
+  }
+  
+  .video-container iframe {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #68C420;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .alert {
+    padding: 20px;
+    background-color: #E81010;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+  }
+  
+  .alert.success {background-color: #04AA6D;}
+  .alert.info {background-color: #2196F3;}
+  .alert.warning {background-color: #E81010;}
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    color: #bababa;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+  
+  
+  
+  
+  </style>
+  
+  </head>
+  
+  <body link='#547484' onload='guardaHorario();dT();' vlink='#547484'>
+   
+  <div class="contenedor">
+      
+
+      
+      
+      <div class="topnav" id="myTopnav">
+   <a href="javascript:location.reload()" class="active">Refresh</a>
+  <!-- <a href="canales.html"> Deportes </a>
+    <a href="note.html"> Canales </a>-->
+ 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <br>
+      
+  <div id="wrapper">
+    <ul class="menu">
+ 
+
+
+      <center><div class="sombreada_css3"><font size=2 face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#FFFFFF">
+        <b>Agenda deportiva del día Lunes 10 de Octubre 2022</b>
+        </font></div></center>
+        
+        <li class="IT"><a href="#">
+        Serie A: Fiorentina vs. Lazio
+        <span class="t">19:45</span></a>
+        <ul>
+        <li class="subitem1"><a href="Espn3.html">ESPN 3<span>Calidad 720p</span></a></li>    
+        <li class="subitem1"><a href="cmorefutbol.html">C More Fotball SE<span>Calidad 720p</span></a></li> 
+        </ul>
+        
+        <li class="ENG"><a href="#">
+      Nottingham  vs. Aston Villa
+        <span class="t">20:00</span></a>
+        <ul>
+        <li class="subitem1"><a href="Espn2.html">ESPN 2<span>Calidad 720p</span></a></li>    
+        <li class="subitem1"><a href="dazn1.html">DAZN 1 ES<span>Calidad 720p</span></a></li> 
+        <li class="subitem1"><a href="vsports.html">V Sport Premium SE<span>Calidad 720p</span></a></li> 
+        </ul>
+        
+        <li class="ES"><a href="#">
+      Elche vs. Mallorca
+        <span class="t">20:00</span></a>
+        <ul>
+        <li class="subitem1"><a href="directvsports.html">DirecTV Sports<span>Calidad 720p</span></a></li>    
+        <li class="subitem1"><a href="movistarlaliga.html">Movistar LaLiga ES<span>Calidad 1080p</span></a></li>  
+        </ul>
+        
+        <li class="AR"><a href="#">
+        Argentinos  vs. Huracán
+        <span class="t">20:30</span></a>
+        <ul>
+        <li class="subitem1"><a href="TNTsports.html">TNT Sports<span>Calidad 720p</span></a></li>    
+        </ul>
+        
+        <li class="AR"><a href="#">
+        Rosario Central vs. Defensa y Justicia
+        <span class="t">20:30</span></a>
+        <ul>
+        <li class="subitem1"><a href="tvpublica.html">TV Pública<span>Calidad 720p</span></a></li>  
+        <li class="subitem1"><a href="foxsportspremium.html">ESPN Premium<span>Calidad 720p</span></a></li>
+        </ul>
+        
+        <li class="CH"><a href="#">
+        Audax Italiano vs. U. La Calera
+        <span class="t">21:30</span></a>
+        <ul>
+        <li class="subitem1"><a href="tntchile.html">TNT Sports Chile<span>Calidad 720p</span></a></li>  
+        </ul>
+        
+        <li class="COL"><a href="#">
+        Unión Magdalena vs. Medellín
+        <span class="t">22:00</span></a>
+        <ul>
+        <li class="subitem1"><a href="winsportsmas.html">Win Sports+<span>Calidad 720p</span></a></li>  
+        </ul>
+        
+        <li class="AR"><a href="#">
+        Racing Club vs- Atlético Tucumán
+        <span class="t">23:00</span></a>
+        <ul>
+        <li class="subitem1"><a href="foxsportspremium.html">ESPN Premium<span>Calidad 720p</span></a></li>
+        </ul>
+        
+        <li class="AR"><a href="#">
+        Estudiantes (LP) vs. Lanús
+        <span class="t">23:00</span></a>
+        <ul>
+        <li class="subitem1"><a href="TNTsports.html">TNT Sports<span>Calidad 720p</span></a></li>    
+        </ul>
+        
+        <li class="ECUA"><a href="#">
+       IDV vs. Técnico Universitario
+        <span class="t">01:00</span></a>
+        <ul>
+        <li class="subitem1"><a href="Goltv.html">GolTV<span>Calidad 720p</span></a></li>  
+        </ul>
+        
+        <li class="AR"><a href="#">
+        Central Córdoba (SdE) vs. Newell's
+        <span class="t">01:30</span></a>
+        <ul>
+        <li class="subitem1"><a href="foxsportspremium.html">ESPN Premium<span>Calidad 720p</span></a></li>
+        </ul>
+        
+        <li class="COL"><a href="#">
+        Alianza Petrolera vs. Santa Fe
+        <span class="t">01:45</span></a>
+        <ul>
+        <li class="subitem1"><a href="winsportsmas.html">Win Sports+<span>Calidad 720p</span></a></li>  
+        </ul>
+        
+        
+  <center><div class="sombreada_css3"><font size=2 face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#FFFFFF">
+  <b></b>
+  </font></div></center>
+  <center><div class="sombreada_css3"><font size=2 face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#FFFFFF">
+    <b></b>
+    </font></div></center>
+
+  </ul>
+  
+  </li>
+  
+  </ul>
+  </div>
+  
+  
+  
+  <!--initiate accordion-->
+  <script type="text/javascript">
+    $(function() {
+    
+     var menu_ul = $('.menu > li > ul'),
+     menu_a = $('.menu > li > a');
+     
+     menu_ul.hide();
+    
+     menu_a.click(function(e) {
+     e.preventDefault();
+     if(!$(this).hasClass('active')) {
+     menu_a.removeClass('active');
+     menu_ul.filter(':visible').slideUp('fast');
+     $(this).addClass('active').next().stop(true,true).slideDown('fast');
+     } else {
+     $(this).removeClass('active');
+     $(this).next().stop(true,true).slideUp('fast');
+     }
+     });
+    
+    });
+  </script>
+  
+  <br>
+  
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  </body>
+  </html>
