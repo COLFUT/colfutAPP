@@ -1,93 +1,61 @@
+  
+  <HTML>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Agenda Deportiva</title>
+  <meta http-equiv="refresh" content="200"/>
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="expires" content="-1" />
+  <script type="text/javascript" src="https://pelotero.net/smallscripts.js"></script>
+  <title>Agenda</title> 
+  <link rel="stylesheet" href="https://pelotero.net/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>  
+<body>   
 
-<html lang=es>
-<head>
- 
-<meta name=robots content=noindex />
-<style>body{margin:0;padding:0}</style>
-<script>
-function getParameterByName(name) {
-  name = name.replace(/[\[]/, "\[").replace(/[\]]/, "\]");
-  var regex = new RegExp("[\?&]" + name + "=([^&#]*)"),
-  results = regex.exec(location.search);
-  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-var getURL = getParameterByName('get');
-var getLang = getParameterByName('lang');
-var getIMG = getParameterByName('img');
-var getKEY  = getParameterByName('key');
-var getKEY2  = getParameterByName('key2');
-</script>
-<script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
-<script>jwplayer.key="XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo"</script>
-</head>
-<div id=player></div>
-<script>
-var playerInstance=jwplayer("player");
-playerInstance.setup({
-	title : "REPRODUCTOR | Mega Deportes",
-	description: "EN VIVO",
-    default: false,
-    type: "dash",
-    file: atob(getURL),
-    drm: {
-        clearkey: {"keyId": atob(getKEY), "key": atob(getKEY2)}
-    },
-    width: "100%",
-    height: "100%",
-    aspectratio: "16:9",
-    autostart: false,
-    cast: {},
-    sharing: {}
-});
 
-playerInstance.on("ready", function () {
-  const buttonId = "download-video-button";
-  const iconPath =
-    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDI0djI0SDB6Ii8+PHBhdGggZD0iTTMgMTloMTh2Mkgzdi0yem0xMC01LjgyOEwxOS4wNzEgNy4xbDEuNDE0IDEuNDE0TDEyIDE3IDMuNTE1IDguNTE1IDQuOTI5IDcuMSAxMSAxMy4xN1YyaDJ2MTEuMTcyeiIgZmlsbD0icmdiYSgyNDcsMjQ3LDI0NywxKSIvPjwvc3ZnPg==";
-  const tooltipText = "Descargar Video";
 
-  // Call the player's `addButton` API method to add the custom button
-  //playerInstance.addButton(iconPath, tooltipText, buttonClickAction, buttonId);
+    <CENTER> <H1>Política de privacidad</H1></CENTER>
 
-  // This function is executed when the button is clicked
-  function buttonClickAction() {
-    const playlistItem = playerInstance.getPlaylistItem();
-    const anchor = document.createElement("a");
-    const fileUrl = playlistItem.file;
-    anchor.setAttribute("href", fileUrl);
-    const downloadName = playlistItem.file.split("/").pop();
-    anchor.setAttribute("download", downloadName);
-    anchor.style.display = "none";
-    document.body.appendChild(anchor);
-    anchor.click();
-    document.body.removeChild(anchor);
-  }
+        <P>El presente Política de Privacidad establece los términos de <B> COLFUT </B> y que protege la información   de los usuarios por que no es necesario tener acceso a los usuarios. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+      
+      </P> 
+      <CENTER>  <h1>    Información que es recogida </h1> </CENTER>
+      
+      <P> Nuestra aplicación no recoge ningún dato de los usuarios es solo una aplicación webview que muestra los partidos de la jornada actualizada.
+      
+      Uso de la información recogida
+      
+      no se recoge ningún dato</P>
+      
+      <CENTER> <H1>Cookies</H1></CENTER>
+      
+          <P>Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web.
+      
+      Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. 
+      Usted puede eliminar las cookies en cualquier momento desde su ordenador.</P>
+       <P>  Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente, . 
+       Usted puede aceptar o negar el uso de cookies, sin embargo, la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios.
+      
+      Enlaces a Terceros</P>
+      
+      
+      
+      Como dejemos antes esta aplicación no admite ningún dato personal de los usuarios .
+      
+    <CENTER><H1> Muchas Gracias  </H1> </CENTER>
+      
+      
+       
 
-  // Move the timeslider in-line with other controls
-  const playerContainer = playerInstance.getContainer();
-  const buttonContainer = playerContainer.querySelector(".jw-button-container");
-  const spacer = buttonContainer.querySelector(".jw-spacer");
-  const timeSlider = playerContainer.querySelector(".jw-slider-time");
-  buttonContainer.replaceChild(timeSlider, spacer);
 
-  // Detect adblock
-  playerInstance.on("adBlock", () => {
-    const modal = document.querySelector("div.modal");
-    modal.style.display = "flex";
 
-    document
-      .getElementById("close")
-      .addEventListener("click", () => location.reload());
-  });
 
-  // New Features
-  console.log(timeSlider);
-});
-if (getLang == "") {
-			lang = 1;
-		}
-		jwplayer().on('play', function(e) {
-		  jwplayer().setCurrentAudioTrack(lang);
-		}); 
-</script>
-</html>
+
+
+</body>    
+</HTML>
+  
