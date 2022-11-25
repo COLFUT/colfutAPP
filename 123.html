@@ -1,16 +1,37 @@
-
-
-<html>
+<!DOCTYPE html>
     <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="expires" content="-1" />
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <style>
-    body {
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ESPN HD</title>
+<script src="1.js"></script>
+<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
+<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script>
+<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script>
+<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+
+<script>
+
+const url = window.location.href;
+let domain = (new URL(url));
+domain = domain.hostname;
+console.log(domain);
+
+</script>
+
+
+<style>
+body {
       margin: 0;
        background: #ececec;
       font-family: 'arial', sans serif;
@@ -104,7 +125,7 @@
                 resize: none;
                 border: 1px solid grey;
             }
-            .button {
+.button {
   background-color: #50ff39; /* Green */
   border: 3px solid Black;
  
@@ -115,47 +136,80 @@
     font-weight: bold;
     width: 115px;
   }
-    </style>
-    
+
+</style>
+      
     </head>
     
-    <body>
+    <body  >
+ <div class="contenedor">
+    <div class="topnav" id="myTopnav">
+ <a href="index.html" class="active">Inicio</a>
+   <a href="canales.html"> Deportes </a>
+    <a href="note.html"> Canales </a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+
+
+<script >
+
+    window.onload = function(){
+        // your code here
      
-      <div class="contenedor">
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Inicio</a>
-            <a href="canales.html"> Deportes </a>
-             <a href="note.html"> Canales </a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <br>
 
-    
-        <div class="video-container">
-        
-     <iframe   class="embed-responsive-item" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen="true" id="my_iframe"   scrolling="no" src="m3u8player.html?url=aHR0cHM6Ly9rd21lZGlhLmhpYnJpZGNkbi5uZXQva3dtZWRpYS9rd3R2c3BvcnRzX2Fici9rd21lZGlhL2t3dHZzcG9ydHNfMTA4MHAvY2h1bmtzLm0zdTg/cD01MyZzPTE2Njg4Nzk3MjYmZT0xNjY4OTY2MTI2JmNmPTE2Njg5NjYxMjYmaD1iZjA5ZmQ3MDc4YjU5YmYwMDBkZmZjOGIxMzdiNjNkZQ==" width="100%" height="100%" frameborder="0" ></iframe>
-     </div>
-    <br>
+// Define the string
+var string = 'https://odlestudent.org/gg.html?uc2&get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwNjEvbWFuaWZlc3QubXBk&key=NzExOTA2OWI5OTAxNWI0ZWI5ZWU0MzAwNTc3Mzk5ZTI=&key2=Yjg5ODI3Y2M5NzBjZDc4ZGE4ODJmZmNhMzUwNGM3NzQ=';
 
-    
-    <center>-</center>
+// Encode the String
+var encodedString = btoa(string);
+console.log(encodedString); // Outputs: "SGVsbG8gV29ybGQh"
+
+
+
+
+var source = "https://megadeportes.live//embed/repro/?r="+encodedString;
+
+
+    var newFrameName = "hello";
+    const iframe = document.getElementById("iframe");
+    $('iframe').attr('src',source ).reload;
+
+
+};
+
+</script>
+<center><h2>BT SPORTS 1  </h2></center>
+    <div class="video-container">
+ 
+      <iframe allow="encrypted-media" width="100%" height="100%" src="" id="iframe"  frameborder="0" scrolling="no" allowfullscreen=""></iframe>
     </div>
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
-    <footer>
-    
-    
-    
-    </footer>
+<br>
+<center><input class="button" onclick="mostrarMensaje2()" type="button" value="OP-SD" />
+<input class="button" onclick="mostrarMensaje1()" type="button" value="OP-SD" /> 
+<input class="button" onclick="mostrarMensaje3()" type="button" value="OP-SD" /> </center>
+
+<!--<input class="button" onclick="location.href='http://ibrasite.epizy.com/btsports1_embed.html';" type="button" value="OP-HD" /> -->
+
+
+    <script type="text/javascript">
+  function mostrarMensaje1() {
+document.getElementById("iframe").src = "https://1l1l.to/ch1"
+}
+function mostrarMensaje2() {
+document.getElementById("iframe").src = "https://www.tutele.nl/online.php?a=13"
+
+}
+
+
+function mostrarMensaje3() {
+document.getElementById("iframe").src = "https://megadeportes.live//embed/repro/?r="+btoa("https://odlestudent.org/gg.html?uc2&get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEwNjEvbWFuaWZlc3QubXBk&key=NzExOTA2OWI5OTAxNWI0ZWI5ZWU0MzAwNTc3Mzk5ZTI=&key2=Yjg5ODI3Y2M5NzBjZDc4ZGE4ODJmZmNhMzUwNGM3NzQ=")
+
+}
+
+</script>
+   
     </body>
     </html>
